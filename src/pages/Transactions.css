@@ -1,0 +1,69 @@
+.transactions-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.transaction-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.transaction-controls select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 1rem;
+  color: #2c3e50;
+  max-width: 300px;
+}
+
+.transaction-form-container {
+  margin-bottom: 30px;
+}
+
+.transaction-list-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  background-color: #fdecea;
+  color: #e74c3c;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .transaction-controls {
+    flex-direction: column;
+  }
+
+  .transaction-controls select {
+    max-width: 100%;
+  }
+}
