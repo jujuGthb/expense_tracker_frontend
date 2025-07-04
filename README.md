@@ -34,7 +34,7 @@ A modern, responsive React application for personal expense tracking with real-t
 
 - Node.js (v14 or higher)
 - npm or yarn package manager
-- Backend API running (see []([link-to-backend-repo)](https://github.com/jujuGthb/expense_tracker_backend))
+- Backend API running ([](https://github.com/jujuGthb/expense_tracker_backend))
 
 ## 🔧 Installation
 
