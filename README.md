@@ -1,6 +1,9 @@
+## Frontend README
+
+
 # Expense Tracker Frontend
 
-A modern, responsive React application for personal expense tracking with real-time charts, budget management, and intuitive user interface.
+A modern, responsive React application for personal expense tracking with real-time charts, budget management, and an intuitive user interface.
 
 ## 🚀 Features
 
@@ -194,23 +197,16 @@ export default instance;
 ### API Endpoints Used
 
 - `POST /auth/login` - User authentication
-- `POST /auth/register` - User registration
 - `GET /transactions` - Fetch expenses
 - `POST /transactions` - Create new expense
-- `PUT /transactions/:id` - Update expense
-- `DELETE /transactions/:id` - Delete expense
 - `GET /budgets` - Fetch budgets
 - `POST /budgets` - Create new budget
-- `PUT /budgets/:id` - Update budget
-- `DELETE /budgets/:id` - Delete budget
 - `GET /profile` - Get user profile
 - `PUT /profile` - Update profile
-- `POST /profile/upload` - Upload profile picture
-- `GET /reports` - Generate reports
 
 ## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
+### Deploy to Vercel
 
 1. **Connect your repository** to Vercel
 2. **Configure build settings**:
@@ -242,9 +238,9 @@ export default instance;
 
 ### Environment Variables
 
-| Variable | Description | Required | Example |
-|----------|-------------|----------|---------|
-| `REACT_APP_API_URL` | Backend API base URL | Yes | `https://your-backend.onrender.com/api` |
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `REACT_APP_API_URL` | Backend API base URL | Yes |
 
 ### API Configuration
 
@@ -261,11 +257,6 @@ For production, update hardcoded image URLs:
 ```javascript
 // Replace localhost URLs with your backend URL
 const imageUrl = `https://your-backend-url.onrender.com\${imagePath}`;
-```
-
-Example in your profile component:
-```javascript
-setPreviewImage(`https://expensetrackerbackend-ga82.onrender.com\${res.data.profilePicture}`);
 ```
 
 ## 🎨 UI/UX Features
@@ -342,7 +333,7 @@ src/
    - Verify API endpoints
 
 3. **Build Errors**
-   - Clear node_modules and reinstall: `rm -rf node_modules package-lock.json && npm install`
+   - Clear node_modules and reinstall
    - Check for dependency conflicts
    - Verify Node.js version
 
@@ -355,11 +346,6 @@ src/
    - Verify backend URL is correct
    - Check image paths
    - Ensure backend serves static files
-
-6. **Environment Variable Issues**
-   - Ensure variables start with `REACT_APP_`
-   - Restart development server after adding variables
-   - Check for typos in variable names
 
 ## 🤝 Contributing
 
@@ -376,35 +362,3 @@ src/
 - Use meaningful commit messages
 - Update documentation for new features
 - Ensure responsive design
-- Test on multiple browsers
-
-## 📝 License
-
-This project is licensed under the ISC License.
-
-## 📞 Support
-
-For support, email your-email@example.com or create an issue in the repository.
-
-## 🔗 Related
-
-- [Backend Repository](link-to-backend-repo)
-- [Live Demo](your-deployed-frontend-url)
-- [API Documentation](link-to-api-docs)
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Chart.js for beautiful charts
-- Lottie for smooth animations
-- Axios for HTTP client
-- FontAwesome and Lucide for icons
-- All open-source contributors
-```
-
-Now you have both README files:
-1. **Backend README** (from my previous response)
-2. **Frontend README** (above)
-
-Each is tailored specifically for its respective repository with the appropriate technology stack, installation instructions, and deployment guides.
-
