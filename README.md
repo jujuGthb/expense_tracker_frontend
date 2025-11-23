@@ -45,23 +45,6 @@ A modern, responsive React application for personal expense tracking with real-t
    Navigate to `http://localhost:3000`
 
 
-##  Features Overview
-
-###  Dashboard
-- Financial overview with key metrics
-- Recent transactions display
-- Budget progress indicators
-- Interactive charts showing spending trends
-- Quick action buttons for common tasks
-
-###  Expense Management
-- Add new expenses with categories
-- Edit and delete existing expenses
-- Search and filter functionality
-- Bulk operations support
-- Voice input for quick entry
-- Receipt photo upload
-
 
 ##  API Integration
 
