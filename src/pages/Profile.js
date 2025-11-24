@@ -22,7 +22,7 @@ const Profile = () => {
         const res = await axios.get("/profile");
         setProfile(res.data);
         if (res.data.profilePicture) {
-          setPreviewImage(`https://expensetrackerbackend-ga82.onrender.com${res.data.profilePicture}`);
+          setPreviewImage(`${process.env.REACT_APP_BASE_URL}${res.data.profilePicture}`);
         }
       } catch (err) {
         console.error("Failed to fetch profile");

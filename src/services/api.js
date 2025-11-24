@@ -1,8 +1,7 @@
-// services/api.js
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://expensetrackerbackend-ga82.onrender.com/api",
+  baseURL:  `${process.env.REACT_APP_BASE_URL}/api`,
 });
 
 instance.interceptors.request.use((config) => {
